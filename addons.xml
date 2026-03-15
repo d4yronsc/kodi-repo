@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<?xml version='1.0' encoding='UTF-8'?>
 <addon id="repository.d4yronsc" name="d4yronsc Repository" version="1.0.0" provider-name="d4yronsc">
     <extension point="xbmc.addon.repository" name="d4yronsc Repository">
         <dir>
@@ -15,7 +14,6 @@
         <platform>all</platform>
     </extension>
 </addon>
-<?xml version='1.0' encoding='UTF-8'?>
 <addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.0" provider-name="d4yronsc (fork of yeager)">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
