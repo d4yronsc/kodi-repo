@@ -2,13 +2,12 @@
 <addons>
 <?xml version='1.0' encoding='UTF-8'?>
 <addon id="repository.d4yronsc" name="d4yronsc Repository" version="1.0.0" provider-name="d4yronsc">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0" />
-    </requires>
     <extension point="xbmc.addon.repository" name="d4yronsc Repository">
-        <info compressed="false">https://d4yronsc.github.io/kodi-repo/addons.xml</info>
-        <checksum>https://d4yronsc.github.io/kodi-repo/addons.xml.md5</checksum>
-        <datadir zip="">https://d4yronsc.github.io/kodi-repo/</datadir>
+        <dir>
+            <info compressed="false">https://d4yronsc.github.io/kodi-repo/addons.xml</info>
+            <checksum>https://d4yronsc.github.io/kodi-repo/addons.xml.md5</checksum>
+            <datadir zip="">https://d4yronsc.github.io/kodi-repo/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>d4yronsc Kodi Repository</summary>
