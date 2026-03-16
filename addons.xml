@@ -14,7 +14,7 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.1" provider-name="d4yronsc (fork of yeager)">
+<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.2" provider-name="d4yronsc (fork of yeager)">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.22.0" />
@@ -385,6 +385,15 @@ Tercih ettiğiniz dilde altyazı mevcut olmadığında, bu eklenti medya dosyas�
             <fanart>resources/fanart.png</fanart>
         </assets>
         <news>
+v1.0.2
+- NEW: TaMaBin post-processor for Spanish (Latino) subtitles
+- NEW: Auto-add opening marks ¿ ¡ (mandatory in Spanish)
+- NEW: Normalize dialogue dashes to em dash (—)
+- NEW: Proper ellipsis (…) and angular quotes «»
+- NEW: Netflix CPS validation (max 17 chars/sec reading speed)
+- NEW: Timing adjustments: min 833ms, max 7s duration
+- NEW: Machine translation artifact cleanup
+
 v1.0.1
 - FIX: No longer tries to save subtitle alongside streaming URLs (HTTP/HTTPS) - prevents 401 errors
 - FIX: Subtitle addon detection now works with all Kodi versions (a4ksubtitles, opensubtitles, etc.)
