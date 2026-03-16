@@ -14,19 +14,19 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.3" provider-name="d4yronsc (fork of yeager)">
+<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.4" provider-name="d4yronsc (fork of yeager)">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.22.0" />
-        
+
 
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <license>GPL-3.0-or-later</license>
-        
-        
+
+
         <summary lang="en_GB">Automatically translate embedded subtitles</summary>
         <summary lang="sv_SE">Översätt inbäddade undertexter automatiskt</summary>
         <summary lang="de_DE">Eingebettete Untertitel automatisch übersetzen</summary>
@@ -385,6 +385,16 @@ Tercih ettiğiniz dilde altyazı mevcut olmadığında, bu eklenti medya dosyas�
             <fanart>resources/fanart.png</fanart>
         </assets>
         <news>
+v1.0.4
+- FIX: Android (Shield/Fire TV) - use Python MKV extractor for HTTP streaming URLs
+- No longer copies entire video file (1.4GB+) to temp before extracting subtitles
+- Avoids FFmpeg permission denied error on Android scoped storage
+- Streaming extraction via xbmcvfs (supports HTTP Range seeking)
+
+v1.0.3
+- FIX: Keep original subtitle timing untouched (fixes subtitle overlap)
+- Only translate text + apply TaMaBin post-processing, never modify start/end times
+
 v1.0.2
 - DeepL now targets ES-419 (Latin American Spanish) instead of generic ES
 - Eliminates Spain-specific expressions (vale, tío, vosotros)
