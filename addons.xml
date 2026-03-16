@@ -14,7 +14,7 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.4" provider-name="d4yronsc (fork of yeager)">
+<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.5" provider-name="d4yronsc (fork of yeager)">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.22.0" />
@@ -385,6 +385,11 @@ Tercih ettiğiniz dilde altyazı mevcut olmadığında, bu eklenti medya dosyas�
             <fanart>resources/fanart.png</fanart>
         </assets>
         <news>
+v1.0.5
+- NEW: SDH/CC cleanup before translation - removes [risas], [music], (sighs), ♪ lyrics ♪, SPEAKER: tags
+- NEW: Manual re-trigger - run force_translate.py to restart translation without stopping video
+- Entries that are pure SDH descriptions are removed entirely (keeps timing clean)
+
 v1.0.4
 - FIX: Android (Shield/Fire TV) - use Python MKV extractor for HTTP streaming URLs
 - No longer copies entire video file (1.4GB+) to temp before extracting subtitles
