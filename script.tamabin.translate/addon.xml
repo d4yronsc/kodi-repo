@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addon id="script.tamabin.translate" name="TaMaBin - Traducir Subtitulos" version="1.0.0" provider-name="d4yronsc">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Translate subtitles (TaMaBin trigger)</summary>
+        <summary lang="es_ES">Traducir subtitulos (trigger TaMaBin)</summary>
+        <description lang="en_GB">Quick launcher for TaMaBin subtitle translation. Run while playing a video to extract and translate subtitles. Add to Favourites for one-click access.</description>
+        <description lang="es_ES">Lanzador rapido para traduccion de subtitulos TaMaBin. Ejecutar mientras reproduces un video para extraer y traducir subtitulos. Agrega a Favoritos para acceso rapido.</description>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
