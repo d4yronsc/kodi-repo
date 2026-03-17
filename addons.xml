@@ -14,7 +14,7 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.17" provider-name="d4yronsc (fork of yeager)">
+<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.18" provider-name="d4yronsc (fork of yeager)">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.22.0" />
@@ -385,6 +385,9 @@ Tercih ettiğiniz dilde altyazı mevcut olmadığında, bu eklenti medya dosyas�
             <fanart>resources/fanart.png</fanart>
         </assets>
         <news>
+v1.0.18
+- Fix: Delay subtitle check 8s after playback to prevent OOM crash on Android TV
+
 v1.0.17
 - Fix: FFmpeg Server URL now in Basic group, always visible
 
