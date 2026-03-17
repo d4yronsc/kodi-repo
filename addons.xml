@@ -14,7 +14,7 @@
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.20" provider-name="d4yronsc (fork of yeager)">
+<addon id="service.subtitletranslator.tamabin" name="Subtitle Translator Pro (TaMaBin)" version="1.0.21" provider-name="d4yronsc (fork of yeager)">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" version="2.22.0" />
@@ -22,6 +22,9 @@
 
     </requires>
     <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <license>GPL-3.0-or-later</license>
@@ -385,10 +388,10 @@ Tercih ettiğiniz dilde altyazı mevcut olmadığında, bu eklenti medya dosyas�
             <fanart>resources/fanart.png</fanart>
         </assets>
         <news>
-v1.0.20
-- Manual-only mode: no auto-translate on playback (prevents Kodi crashes on Android TV)
-- Translate via RunScript or force_translate button only
-- Zero resource usage during normal playback
+v1.0.21
+- NEW: Shortcut in Programs > Add-ons for manual translate trigger
+- Add to Favourites for one-click access from any screen
+- Manual-only mode: zero resource usage during normal playback
 
 v1.0.14
 - NEW: Remote FFmpeg server support (Docker on Orange Pi/NAS/PC)
