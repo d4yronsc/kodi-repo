@@ -543,7 +543,7 @@ v0.7.0 - Initial beta
         <description lang="es_ES">Lanzador rapido para traduccion de subtitulos TaMaBin. Ejecutar mientras reproduces un video.</description>
     </extension>
 </addon>
-<addon id="service.translatarr" name="Translatarr" version="3.0.0" provider-name="d4yronsc (fork of Addonniss)">
+<addon id="service.translatarr" name="Translatarr" version="3.0.1" provider-name="d4yronsc (fork of Addonniss)">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.25.1"/>
