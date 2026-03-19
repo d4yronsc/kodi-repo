@@ -543,4 +543,24 @@ v0.7.0 - Initial beta
         <description lang="es_ES">Lanzador rapido para traduccion de subtitulos TaMaBin. Ejecutar mientras reproduces un video.</description>
     </extension>
 </addon>
+<addon id="service.translatarr" name="Translatarr" version="3.0.0" provider-name="d4yronsc (fork of Addonniss)">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.25.1"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.python.script" library="launcher.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="kodi.addon.metadata">
+        <summary lang="en_GB">Subtitle Translator - Gemini, OpenAI, DeepL, Google Translate, LibreTranslate</summary>
+        <description lang="en_GB">Automatically detects and translates movie subtitles into your preferred language. Supports Gemini, OpenAI, DeepL Free/Pro, Google Translate API, and LibreTranslate. Features ES-419 Latin American Spanish, Netflix subtitle standards, SDH cleanup, and professional translation prompts.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
 </addons>
